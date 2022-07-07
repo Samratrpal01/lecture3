@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import ProdcutCatalog from './ProductCatalog';
 
 export default function Counter()
 {   
@@ -8,14 +9,13 @@ export default function Counter()
         setCount(count+1)
     }
     const decrement=()=>
-    {
+    {   if(count>0)
         setCount(count-1)
     }
     return(
         <div>
-        <h2>{count}</h2>
         <button onClick={increment}>+</button>
-        <h1>Hello World</h1>
+        <h1>{count}</h1>
         <button onClick={decrement}>-</button>
         </div>
     )

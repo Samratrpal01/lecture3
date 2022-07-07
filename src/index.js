@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import Counter from './Components/CounterComponents';
 import TodoComponent from './Components/todocomponents';
+import App from './App';
 const data=[
  { fname:"peter",
   email:"peter@gmail.com"
@@ -19,7 +19,8 @@ const data=[
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
-  <TodoComponent></TodoComponent>
+  
+  <App></App>
 
 );
 
